@@ -3,6 +3,10 @@ import { Grid, Icon, Segment, Header, Image, Card } from 'semantic-ui-react';
 import hero from './hero.jpeg';
 import { HeroContainer, HeroTexContainer, SectionHeadersContainer, HeaderStyled, SubHeaderStyled, HeaderCategory } from './style';
 import img1 from './img1.jpeg';
+import ctg1 from './ctg1.jpeg';
+import ctg2 from './ctg2.jpg';
+import ctg3 from './ctg3.jpeg';
+import ctg4 from './ctg4.png';
 
 const Home = () => (
   <div>
@@ -69,29 +73,29 @@ const Home = () => (
         <Header as='h2' content='Categorias' textAlign='center' style={{ fontSize: '3em', marginBottom: '2em', fontWeight: '300' }} />
         <Grid.Row>
           <Grid.Column>
-            <HeaderCategory as='a' icon>
-              <Icon name='desktop' />
+            <Image centered href='#' src={ctg1} />
+            <HeaderCategory >
               IT & PROGRAMACIÓN
               <Header.Subheader>Mas de 1400 proyectos</Header.Subheader>
             </HeaderCategory>
           </Grid.Column>
           <Grid.Column>
-            <HeaderCategory as='a' icon>
-              <Icon name='photo' />
+            <Image centered href='#' src={ctg2} />
+            <HeaderCategory >
               DISEÑO & MULTIMEDIA
               <Header.Subheader>Mas de 900 proyectos</Header.Subheader>
             </HeaderCategory>
           </Grid.Column>
           <Grid.Column>
-            <HeaderCategory as='a' icon>
-              <Icon name='bar chart' />
+            <Image centered href='#' src={ctg3} />
+            <HeaderCategory >
               MARKETING & VENTAS
               <Header.Subheader>Mas de 500 proyectos</Header.Subheader>
             </HeaderCategory>
           </Grid.Column>
           <Grid.Column>
-            <HeaderCategory as='a' icon>
-              <Icon name='file text outline' />
+            <Image centered href='#' src={ctg4} />
+            <HeaderCategory >
               TRADUCCIÓN Y REDACCIÓN
               <Header.Subheader>Mas de 350 proyectos</Header.Subheader>
             </HeaderCategory>

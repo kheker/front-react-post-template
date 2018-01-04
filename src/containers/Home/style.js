@@ -39,6 +39,6 @@ color:${props => props.theme.primaryColorText} !important;
 `;
 
 export const HeaderCategory = styled(Header) `
+  margin-top: 1em !important;
   font-size: 1.3em !important;
-  cursor: pointer;
 `;
