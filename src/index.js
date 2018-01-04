@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components';
 import { ConnectedRouter } from 'react-router-redux';
+import 'semantic-ui-css/semantic.min.css';
 import App from './containers/App';
 import store, { history } from './store';
 import registerServiceWorker from './registerServiceWorker';
-import 'semantic-ui-css/semantic.min.css';
 import theme from './utils/theme';
 
 const target = document.getElementById('root')

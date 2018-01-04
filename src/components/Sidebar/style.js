@@ -10,6 +10,7 @@ export const StyledSidebar = styled(Sidebar) `
   display: flex !important;
   border: none !important;
   background-color: ${props => props.theme.secondaryColor} !important;
+  position: fixed !important;
 `
 //
 export const SidebarLogo = styled(ImageComponent) `
@@ -38,3 +39,6 @@ export const SidebarLogoutItem = SidebarItem.extend`
   cursor: pointer;
   border-top: 1px solid rgba(34, 36, 38, 0.15) !important;
 `
+export const Spacer = styled.span`
+  flex-grow:1;
+`;

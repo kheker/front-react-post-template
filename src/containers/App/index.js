@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Header from '../../components/Header';
-import { Route } from 'react-router-dom';
 import Home from '../Home';
 import Login from '../Login';
 import Register from '../Register';
@@ -28,15 +28,16 @@ class App extends Component {
       <PageLayout>
         <SidebarSemanticPushableStyled>
           <SidebarLeftSlideAlong visible={visible} />
+          <Header onVisibleSideBar={this.onVisibleSideBar} />
           <SidebarSemanticPusherStyled>
-            <Header onVisibleSideBar={this.onVisibleSideBar} />
-            <Route exact path='/' component={Home} />
-            <Route exact path='/login' component={Login} />
-            <Route exact path='/registrar' component={Register} />
             <MainLayout>
               <MainContent>
                 <MainContainer >
-                  dlakjs dkajw dl
+                  <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route exact path='/login' component={Login} />
+                    <Route exact path='/registrar' component={Register} />
+                  </Switch>
                 </MainContainer>
               </MainContent>
             </MainLayout>

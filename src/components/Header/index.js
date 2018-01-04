@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
-import { Button, Menu, Icon } from 'semantic-ui-react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import { Button, Menu, Icon } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
+import { MenuStyled, MenuItemStyled } from './style';
 
 class MenuExampleSizeTiny extends Component {
   state = { activeItem: 'home' }
@@ -11,24 +13,22 @@ class MenuExampleSizeTiny extends Component {
     const { activeItem } = this.state
     const { onVisibleSideBar } = this.props
     return (
-      <Menu >
-        <Menu.Item name='Menu' onClick={onVisibleSideBar} >
+      <MenuStyled fixed='top' borderless={false}>
+        <MenuItemStyled name='Menu' onClick={onVisibleSideBar} >
           <Icon name='content' />
           Menu
-        </Menu.Item>
-        <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
-        <Menu.Item name='messages' active={activeItem === 'messages'} onClick={this.handleItemClick} />
-
+        </MenuItemStyled>
+        <MenuItemStyled as={NavLink} to='/' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
         <Menu.Menu position='right'>
 
-          <Menu.Item>
+          <MenuItemStyled>
             <Button secondary>Sign In</Button>
-          </Menu.Item>
-          <Menu.Item>
+          </MenuItemStyled>
+          <MenuItemStyled>
             <Button primary>Sign Up</Button>
-          </Menu.Item>
+          </MenuItemStyled>
         </Menu.Menu>
-      </Menu>
+      </MenuStyled>
     )
   }
 }

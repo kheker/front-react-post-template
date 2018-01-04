@@ -1,11 +1,12 @@
 import React from 'react';
-import { Icon, Menu } from 'semantic-ui-react';
-import { SidebarItem, StyledSidebar, SidebarLogo, SidebarLogoContainer, SidebarLogoutItem } from './style';
-
 import PropTypes from 'prop-types';
+import { Icon, Menu } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
+import { SidebarItem, StyledSidebar, SidebarLogo, SidebarLogoContainer, SidebarLogoutItem, Spacer } from './style';
+
 
 const SidebarLeftSlideAlong = ({ visible }) => (
-  <StyledSidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
+  <StyledSidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted >
     <SidebarLogoContainer href="https://github.com/Metnew/react-semantic.ui-starter">
       <SidebarLogo src='https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?h=350&auto=compress&cs=tinysrgb' alt="logo" shape="circular" centered />
     </SidebarLogoContainer>
@@ -13,15 +14,26 @@ const SidebarLeftSlideAlong = ({ visible }) => (
       <Icon name='user circle' />
       Tu Perfil
     </SidebarItem>
-    <SidebarItem name='trabajos'>
+    <SidebarItem as={NavLink} to='/registrar' name='register'>
+      Unete/Registrate
+    </SidebarItem>
+    <SidebarItem as={NavLink} to='/login' name='login'>
+      Entrar
+    </SidebarItem>
+    <SidebarItem as={NavLink} to='/trabajos' name='trabajos'>
       Encuentra Trabajos
     </SidebarItem>
-    <SidebarItem name='frelancers'>
+    <SidebarItem as={NavLink} to='/freelancers' name='frelancers'>
       Encuentra Frelancers
     </SidebarItem>
-    <SidebarItem name='proyectos'>
+    <SidebarItem as={NavLink} to='/proyectos' name='proyectos'>
       Crea Proyectos
     </SidebarItem>
+    <Spacer />
+    <SidebarLogoutItem name='logout'>
+      <Icon name='power' />
+      Cerrar Sesión
+    </SidebarLogoutItem>
   </StyledSidebar>
 )
 SidebarLeftSlideAlong.propTypes = {
