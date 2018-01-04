@@ -43,9 +43,9 @@ export const SidebarSemanticPushableStyled = styled(Sidebar.Pushable) `
 
 //  Margin - just to fill empty space
 export const MainContainer = styled(Container) `
-padding-left: 1rem;
-padding-right: 1rem;
-margin-top: 6em;
+padding-left: 0px;
+padding-right: 0px;
+margin-top: 50px;
 margin-bottom: 1em;
 flex-direction: column;
 display: flex !important;

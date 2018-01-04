@@ -32,7 +32,7 @@ class App extends Component {
           <SidebarSemanticPusherStyled>
             <MainLayout>
               <MainContent>
-                <MainContainer >
+                <MainContainer fluid>
                   <Switch>
                     <Route exact path='/' component={Home} />
                     <Route exact path='/login' component={Login} />
