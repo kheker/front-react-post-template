@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Home from '../Home';
 import Login from '../Login';
 import Register from '../Register';
@@ -43,6 +44,7 @@ class App extends Component {
             </MainLayout>
           </SidebarSemanticPusherStyled>
         </SidebarSemanticPushableStyled>
+        <Footer />
       </PageLayout>
     )
   }

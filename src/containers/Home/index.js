@@ -105,7 +105,7 @@ const Home = () => (
     </Segment>
     <Segment vertical style={{ padding: '6em 0em' }}>
       <Grid container stackable columns={4} textAlign='center'>
-        <Header as='h2' content='Precios' textAlign='center' style={{ fontSize: '3em', marginBottom: '2em', fontWeight: '300' }} />
+        <Header as='h2' content='Plan de Beneficios' textAlign='center' style={{ fontSize: '3em', marginBottom: '2em', fontWeight: '300' }} />
         <Grid.Row>
           <Grid.Column>
             <Card>
