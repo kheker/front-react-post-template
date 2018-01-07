@@ -7,7 +7,7 @@ export const PageLayout = styled.div`height: 100%;`
 export const MainLayout = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: calc(100% - 72px);
+  min-height: 100%;
   color: ${props => props.theme.primaryTextColor};
   background-color: ${props => props.theme.primaryColorText};
 `
@@ -15,8 +15,6 @@ export const MainLayout = styled.div`
 export const MainContent = styled.main`
   display: flex;
   flex-grow: 1;
-  min-height: calc(100% - 72px);
-  flex-direction: column;
   `
 /* ${media.md`
    padding-top: 65px;
@@ -52,6 +50,12 @@ display: flex !important;
 flex-grow: 1;
 & > *:last-child {
   flex-grow: 1;
+}
+
+  > div,
+body > div > div
+{
+  height: 100%;
 }
   `
 /* ${media.mdOnly`

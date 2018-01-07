@@ -41,6 +41,6 @@ const Footer = () => (
         </Grid.Column>
       </Grid.Row>
     </Grid>
-  </Segment >
+  </Segment>
 )
 export default Footer;

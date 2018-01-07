@@ -27,6 +27,17 @@ class App extends Component {
     const { visible } = this.state;
     return (
       <PageLayout>
+        <style>
+          {
+            `
+            body > div,
+            body > div > div,
+            body > div > div > div{
+              height:100%;
+            }
+            `
+          }
+        </style>
         <SidebarSemanticPushableStyled>
           <SidebarLeftSlideAlong visible={visible} />
           <Header onVisibleSideBar={this.onVisibleSideBar} />
