@@ -13,7 +13,7 @@ const Header = ({
         <Icon name='content' />
         Menu
       </MenuItemStyled>
-      <MenuItemStyled as={NavLink} to='/' name='PIXELANCE' />
+      <MenuItemStyled as={NavLink} exact to='/' name='PIXELANCE' />
     </MenuStyled>
   )
 

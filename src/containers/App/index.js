@@ -23,6 +23,12 @@ class App extends Component {
   onVisibleSideBar = () => {
     this.setState({ visible: !this.state.visible })
   }
+
+  handlePusher = () => {
+    const { visible } = this.state;
+
+    if (visible) this.setState({ visible: false });
+  };
   render() {
     const { visible } = this.state;
     return (
@@ -41,7 +47,7 @@ class App extends Component {
         <SidebarSemanticPushableStyled>
           <SidebarLeftSlideAlong visible={visible} />
           <Header onVisibleSideBar={this.onVisibleSideBar} />
-          <SidebarSemanticPusherStyled>
+          <SidebarSemanticPusherStyled onClick={this.handlePusher}>
             <MainLayout>
               <MainContent>
                 <MainContainer fluid>
@@ -53,9 +59,9 @@ class App extends Component {
                 </MainContainer>
               </MainContent>
             </MainLayout>
+            <Footer />
           </SidebarSemanticPusherStyled>
         </SidebarSemanticPushableStyled>
-        <Footer />
       </PageLayout>
     )
   }
