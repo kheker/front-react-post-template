@@ -8,12 +8,10 @@ const LoginInner = (props) => {
     values,
     touched,
     errors,
-    dirty,
     isSubmitting,
     handleChange,
     handleBlur,
     handleSubmit,
-    isValid
   } = props;
   return (
     <Grid columns={1} textAlign='center' centered verticalAlign='middle'>
@@ -66,8 +64,8 @@ const LoginInner = (props) => {
               />
             </Segment>
           </Form>
-          <Segment>
-            ¿ Aun no tienes cuenta ? <a href='/register'>Unete a nuestra comunidad</a>
+          <Segment textAlign='center'>
+            ¿ Aun no tienes cuenta ? <a href='/registrar'>Registrate!</a>
           </Segment>
         </Grid.Column>
       </Grid.Row>
