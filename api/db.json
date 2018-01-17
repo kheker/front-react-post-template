@@ -64,7 +64,84 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "me": {
+    "name": "Kevin Perez"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "jhon mcklein",
+      "avatar": "https://randomuser.me/api/portraits/men/66.jpg",
+      "profession": "Developer",
+      "rating": 4,
+      "country": "us",
+      "pricePerHour": 20,
+      "finishJobs": 4,
+      "skills": [
+        "node.js",
+        "angular.js",
+        "mongodb",
+        "react.js"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ana mcklein",
+      "avatar": "https://randomuser.me/api/portraits/women/65.jpg",
+      "profession": "Designer",
+      "rating": 5,
+      "country": "ca",
+      "pricePerHour": 30,
+      "finishJobs": 5,
+      "skills": [
+        "photoshop",
+        "illustrator",
+        "adobe"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "paul mcklein",
+      "avatar": "https://randomuser.me/api/portraits/men/29.jpg",
+      "profession": "Traductor",
+      "rating": 3,
+      "country": "us",
+      "pricePerHour": 20,
+      "finishJobs": 3,
+      "skills": [
+        "ingles",
+        "aleman",
+        "frances"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "pepe mcklein",
+      "avatar": "https://randomuser.me/api/portraits/men/35.jpg",
+      "profession": "Developer",
+      "rating": 0,
+      "country": "co",
+      "pricePerHour": 10,
+      "finishJobs": 0,
+      "skills": [
+        "php",
+        "laravel",
+        "mysql"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "dayanna mcklein",
+      "avatar": "https://randomuser.me/api/portraits/women/70.jpg",
+      "profession": "Matematico",
+      "rating": 5,
+      "country": "ve",
+      "pricePerHour": 13,
+      "finishJobs": 7,
+      "skills": [
+        "Estadistica",
+        "Investigacion de operaciones"
+      ]
+    }
+  ]
 }

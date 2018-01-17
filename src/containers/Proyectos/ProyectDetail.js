@@ -19,11 +19,7 @@ const DescriptionText = styled.div`
   font-size: 1.1em;
   line-height: 1.6em;
 `;
-const TitleDescription = styled.div`
-  color: #666 !important;
-  font-size: 1.6em;
-  margin-top: 15px;
-`;
+
 const ProjectDetail = () => (
   <Container>
     <Header size='huge'>

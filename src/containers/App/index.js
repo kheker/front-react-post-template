@@ -7,6 +7,7 @@ import Login from '../Login';
 import Register from '../Register';
 import Proyectos from '../Proyectos';
 import DetallePrueba from '../Proyectos/ProyectDetail';
+import Users from '../Users';
 import {
   SidebarSemanticPushableStyled,
   SidebarSemanticPusherStyled,
@@ -56,6 +57,7 @@ class App extends Component {
                   <Switch>
                     <Route exact path='/' component={Home} />
                     <Route exact path='/login' component={Login} />
+                    <Route exact path='/usuarios' component={Users} />
                     <Route exact path='/registrar' component={Register} />
                     <Route exact path='/proyectos' component={Proyectos} />
                     <Route exact path='/proyectos/:id' component={DetallePrueba} />
