@@ -8,7 +8,7 @@ const Header = ({
   onVisibleSideBar
 }) => (
 
-    <MenuStyled fixed='top' borderless={false}>
+    <MenuStyled fixed='top' borderless={false} size='large'>
       <MenuItemStyled name='Menu' onClick={onVisibleSideBar} >
         <Icon name='content' />
         Menu

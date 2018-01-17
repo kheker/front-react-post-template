@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "json-server 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "skills": [
+        "node.js",
+        "angular.js",
+        "express",
+        "react.js",
+        "mongodb"
+      ],
+      "user": {
+        "name": "yersy",
+        "avatar": ""
+      }
+    },
+    {
+      "id": 2,
+      "title": "json-server 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "skills": [
+        "php",
+        "postgresql",
+        "mysql",
+        "codeigniter",
+        "laravel"
+      ],
+      "user": {
+        "name": "gerald",
+        "avatar": ""
+      }
+    },
+    {
+      "id": 3,
+      "title": "json-server 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "skills": [
+        ".net"
+      ],
+      "user": {
+        "name": "gollo",
+        "avatar": ""
+      }
+    },
+    {
+      "id": 4,
+      "title": "json-server 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "skills": [
+        "vue.js"
+      ],
+      "user": {
+        "name": "kevin",
+        "avatar": ""
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

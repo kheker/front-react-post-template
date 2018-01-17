@@ -43,7 +43,7 @@ export const SidebarSemanticPushableStyled = styled(Sidebar.Pushable) `
 export const MainContainer = styled(Container) `
 padding-left: 0px;
 padding-right: 0px;
-margin-top: 50px;
+margin-top: 75px;
 margin-bottom: 1em;
 flex-direction: column;
 display: flex !important;

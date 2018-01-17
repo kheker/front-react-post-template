@@ -5,6 +5,8 @@ import Footer from '../../components/Footer';
 import Home from '../Home';
 import Login from '../Login';
 import Register from '../Register';
+import Proyectos from '../Proyectos';
+import DetallePrueba from '../Proyectos/ProyectDetail';
 import {
   SidebarSemanticPushableStyled,
   SidebarSemanticPusherStyled,
@@ -55,6 +57,8 @@ class App extends Component {
                     <Route exact path='/' component={Home} />
                     <Route exact path='/login' component={Login} />
                     <Route exact path='/registrar' component={Register} />
+                    <Route exact path='/proyectos' component={Proyectos} />
+                    <Route exact path='/proyectos/:id' component={DetallePrueba} />
                   </Switch>
                 </MainContainer>
               </MainContent>
