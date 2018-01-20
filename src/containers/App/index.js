@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import Home from '../Home';
-import Login from '../Login';
-import Register from '../Register';
-import Proyectos from '../Proyectos';
-import DetallePrueba from '../Proyectos/ProyectDetail';
-import Users from '../Users';
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Home from "../Home";
+import Login from "../Login";
+import Register from "../Register";
+import Proyectos from "../Proyectos";
+import DetallePrueba from "../Proyectos/ProyectDetail";
+import Users from "../Users";
+import Profile from "../Profile";
+
 import {
   SidebarSemanticPushableStyled,
   SidebarSemanticPusherStyled,
@@ -15,17 +17,17 @@ import {
   MainLayout,
   MainContent,
   MainContainer
-} from './style';
-import SidebarLeftSlideAlong from '../../components/Sidebar';
+} from "./style";
+import SidebarLeftSlideAlong from "../../components/Sidebar";
 
 class App extends Component {
   state = {
     visible: false
-  }
+  };
 
   onVisibleSideBar = () => {
-    this.setState({ visible: !this.state.visible })
-  }
+    this.setState({ visible: !this.state.visible });
+  };
 
   handlePusher = () => {
     const { visible } = this.state;
@@ -37,15 +39,13 @@ class App extends Component {
     return (
       <PageLayout>
         <style>
-          {
-            `
+          {`
             body > div,
             body > div > div,
             body > div > div > div{
               height:100%;
             }
-            `
-          }
+            `}
         </style>
         <SidebarSemanticPushableStyled>
           <SidebarLeftSlideAlong visible={visible} />
@@ -55,12 +55,17 @@ class App extends Component {
               <MainContent>
                 <MainContainer fluid>
                   <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route exact path='/login' component={Login} />
-                    <Route exact path='/usuarios' component={Users} />
-                    <Route exact path='/registrar' component={Register} />
-                    <Route exact path='/proyectos' component={Proyectos} />
-                    <Route exact path='/proyectos/:id' component={DetallePrueba} />
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/login" component={Login} />
+                    <Route exact path="/usuarios" component={Users} />
+                    <Route exact path="/profile/:id" component={Profile} />
+                    <Route exact path="/registrar" component={Register} />
+                    <Route exact path="/proyectos" component={Proyectos} />
+                    <Route
+                      exact
+                      path="/proyectos/:id"
+                      component={DetallePrueba}
+                    />
                   </Switch>
                 </MainContainer>
               </MainContent>
@@ -69,9 +74,8 @@ class App extends Component {
           </SidebarSemanticPusherStyled>
         </SidebarSemanticPushableStyled>
       </PageLayout>
-    )
+    );
   }
 }
-
 
 export default App;

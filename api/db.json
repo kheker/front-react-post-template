@@ -3,14 +3,9 @@
     {
       "id": 1,
       "title": "json-server 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "skills": [
-        "node.js",
-        "angular.js",
-        "express",
-        "react.js",
-        "mongodb"
-      ],
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "skills": ["node.js", "angular.js", "express", "react.js", "mongodb"],
       "user": {
         "name": "yersy",
         "avatar": ""
@@ -19,14 +14,9 @@
     {
       "id": 2,
       "title": "json-server 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "skills": [
-        "php",
-        "postgresql",
-        "mysql",
-        "codeigniter",
-        "laravel"
-      ],
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "skills": ["php", "postgresql", "mysql", "codeigniter", "laravel"],
       "user": {
         "name": "gerald",
         "avatar": ""
@@ -35,10 +25,9 @@
     {
       "id": 3,
       "title": "json-server 3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "skills": [
-        ".net"
-      ],
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "skills": [".net"],
       "user": {
         "name": "gollo",
         "avatar": ""
@@ -47,10 +36,9 @@
     {
       "id": 4,
       "title": "json-server 4",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "skills": [
-        "vue.js"
-      ],
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "skills": ["vue.js"],
       "user": {
         "name": "kevin",
         "avatar": ""
@@ -77,11 +65,11 @@
       "country": "us",
       "pricePerHour": 20,
       "finishJobs": 4,
-      "skills": [
-        "node.js",
-        "angular.js",
-        "mongodb",
-        "react.js"
+      "skills": ["node.js", "angular.js", "mongodb", "react.js"],
+      "portfolio": [
+        "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?h=350&auto=compress&cs=tinysrgb",
+        "https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?h=350&auto=compress&cs=tinysrgb",
+        "https://images.pexels.com/photos/6231/marketing-color-colors-wheel.jpg?h=350&auto=compress&cs=tinysrgb"
       ]
     },
     {
@@ -93,11 +81,8 @@
       "country": "ca",
       "pricePerHour": 30,
       "finishJobs": 5,
-      "skills": [
-        "photoshop",
-        "illustrator",
-        "adobe"
-      ]
+      "skills": ["photoshop", "illustrator", "adobe"],
+      "portfolio": [""]
     },
     {
       "id": 3,
@@ -108,11 +93,8 @@
       "country": "us",
       "pricePerHour": 20,
       "finishJobs": 3,
-      "skills": [
-        "ingles",
-        "aleman",
-        "frances"
-      ]
+      "skills": ["ingles", "aleman", "frances"],
+      "portfolio": [""]
     },
     {
       "id": 4,
@@ -123,11 +105,8 @@
       "country": "co",
       "pricePerHour": 10,
       "finishJobs": 0,
-      "skills": [
-        "php",
-        "laravel",
-        "mysql"
-      ]
+      "skills": ["php", "laravel", "mysql"],
+      "portfolio": [""]
     },
     {
       "id": 5,
@@ -138,10 +117,8 @@
       "country": "ve",
       "pricePerHour": 13,
       "finishJobs": 7,
-      "skills": [
-        "Estadistica",
-        "Investigacion de operaciones"
-      ]
+      "skills": ["Estadistica", "Investigacion de operaciones"],
+      "portfolio": [""]
     }
   ]
 }
