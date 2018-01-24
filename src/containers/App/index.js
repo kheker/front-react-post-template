@@ -5,8 +5,8 @@ import Footer from "../../components/Footer";
 import Home from "../Home";
 import Login from "../Login";
 import Register from "../Register";
-import Proyectos from "../Proyectos";
-import DetallePrueba from "../Proyectos/ProyectDetail";
+import Projectos from "../Projects";
+import DetallePrueba from "../Projects/ProjectDetail";
 import Users from "../Users";
 import Profile from "../Profile";
 
@@ -60,7 +60,7 @@ class App extends Component {
                     <Route exact path="/usuarios" component={Users} />
                     <Route exact path="/profile/:id" component={Profile} />
                     <Route exact path="/registrar" component={Register} />
-                    <Route exact path="/proyectos" component={Proyectos} />
+                    <Route exact path="/proyectos" component={Projectos} />
                     <Route
                       exact
                       path="/proyectos/:id"
